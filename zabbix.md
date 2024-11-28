@@ -7,6 +7,8 @@
 
  - [imprimante](#imprimantes)
 
+[Tableau de board](#Tableau-de-board)
+
 [Graphique custom](#Graphique-custom)
 
 [monitoring une base SQL](#ODBC---sql)
@@ -64,7 +66,7 @@ emplacement de la mib
 /usr/share/snmp/mibs 
 ```
 
-# imprimantes
+### imprimantes
 import template richo
 ```collecte de donnée > modèle > snmp ricoh > graphique > créer```
 ```elements > ajouté ```
