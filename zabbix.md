@@ -19,18 +19,33 @@
 ```
 
 # Ajouter un hôte
-Dans zabbix : Surveillance > Hôtes
+Dans zabbix : Surveillance > Hôtes > Créer un hôte
 
-## ping 
+### ping 
 nom
 
-groupe
+groupe d'hôte
 
 (interface) Ajouter > Agent > IP
 
-## SNMP
+Ajouter
 
+### SNMP
+nom
 
+modèle 
+
+groupe d'hôte
+
+(interface) Ajouter > SNMP
+
+IP
+
+Version SNMP
+
+communauté SNMP {$SNMP_COMMUNITY} = public
+
+Ajouter
 
 
 # Ajouter une Template
