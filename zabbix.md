@@ -21,11 +21,16 @@
 # Ajouter un hôte
 Dans zabbix : Surveillance > Hôtes
 
+# ping 
 nom
 
 groupe
 
 (interface) Ajouter > Agent > IP
+
+# SNMP
+
+
 
 
 # Ajouter une Template
