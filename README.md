@@ -5,6 +5,5 @@
 # monitoring
 ## zabbix
 
-##cacti
-
+## cacti
 [installation](cacti.md)
