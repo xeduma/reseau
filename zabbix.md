@@ -3,8 +3,6 @@
 
 [Ajouter un hote](#Ajouter-un-hôte)
 
-[Ajouter une Mibs](#Ajouter-une-Mibs)
-
 [Ajouter une Template](#Ajouter-une-Template)
 
 [imprimante](#imprimantes)
@@ -12,8 +10,6 @@
 [Graphique custom](#Graphique-custom)
 
 [monitoring une base SQL](#ODBC---sql)
-
-
 
 
 
@@ -31,11 +27,21 @@ groupe
 
 (interface) Ajouter > Agent > IP
 
-# Ajouter une Mibs
-bb
 
 # Ajouter une Template
-cc
+télécharger une template depuis https://www.zabbix.com/integrations
+Dans zabbix : Collecte de données > Modèles
+
+importé
+
+choisir l'ensemble des règles, pour ajouter l'intégratlité de la template
+
+## Ajouter une Mibs
+si la template n'est pas dispo, il faut ajouter une mib depuis le site du constructeur
+emplacement de la mib
+```bash
+/usr/share/snmp/mibs 
+```
 
 # imprimantes
 import template richo
