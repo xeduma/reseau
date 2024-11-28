@@ -30,11 +30,14 @@ groupe
 
 # Ajouter une Template
 télécharger une template depuis https://www.zabbix.com/integrations
+
 Dans zabbix : Collecte de données > Modèles
 
 importé
 
 choisir l'ensemble des règles, pour ajouter l'intégratlité de la template
+
+ensuite en peut ajouter notre hôte  spécial
 
 ## Ajouter une Mibs
 si la template n'est pas dispo, il faut ajouter une mib depuis le site du constructeur
