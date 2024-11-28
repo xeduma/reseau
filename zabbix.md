@@ -1,7 +1,7 @@
 # sommaire
 [Configuration](#configuration)
-
 [ODBC](#ODBC---sql)
+[imprimante](#imprimante)
 
 
 
@@ -87,3 +87,14 @@ Macro | Valeur
 {$MSSQL.DSN} | coucou
 {$MSSQL.PASSWORD} | MDP_secret
 {$MSSQL.USER} | zabbix_monitor
+
+
+# imprimantes
+import template richo
+collecte de donnée > modèle > snmp ricoh > graphique > créer
+elements > ajouté 
+nom
+cle : A_TonerLevel[Cyan Toner]
+numérique flottant
+oid : .1.3.6.1.4.1.367.3.2.1.2.24.1.1.5.2
+
