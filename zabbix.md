@@ -1,7 +1,7 @@
 # sommaire
 [Configuration](#configuration)
 
-[ODBC](#ODBC-sql)
+[ODBC](#ODBC---sql)
 
 
 
