@@ -18,7 +18,9 @@
 
 
 # configuration
-```bash/etc/zabbix/zabbix_server.conf```
+```bash
+/etc/zabbix/zabbix_server.conf
+```
 
 # Ajouter un hôte
 aa
@@ -37,6 +39,16 @@ nom
 cle : A_TonerLevel[Cyan Toner]
 numérique flottant
 oid : .1.3.6.1.4.1.367.3.2.1.2.24.1.1.5.2
+
+
+# Graphique custom
+
+```bash
+/usr/share/zabbix/modules 
+```
+
+
+
 
 # ODBC - SQL
 Zabbix va contacter le SQL avec le pilote ODBC
