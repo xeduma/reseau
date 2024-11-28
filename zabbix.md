@@ -24,8 +24,11 @@
 
 # Ajouter un hôte
 Dans zabbix : Surveillance > Hôtes
+
 nom
+
 groupe
+
 (interface) Ajouter > Agent > IP
 
 # Ajouter une Mibs
