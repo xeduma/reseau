@@ -3,7 +3,7 @@
 
 [ODBC](#ODBC---sql)
 
-[imprimante](#imprimante)
+[imprimante](#imprimantes)
 
 
 
