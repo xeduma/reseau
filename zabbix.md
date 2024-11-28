@@ -76,8 +76,9 @@ numérique flottant
 oid : .1.3.6.1.4.1.367.3.2.1.2.24.1.1.5.2
 
 
-#Tableau de board
+# Tableau de board
 Dans zabbix : ```tableaux de bord```
+
 ```éditer le tableau de bord```
 
 Ajouter > graph (classic)
@@ -85,7 +86,7 @@ Ajouter > graph (classic)
 selectionner le graphique
 
 
-# Graphique custom
+### Graphique custom
 emplacement
 ```bash
 /usr/share/zabbix/modules 
