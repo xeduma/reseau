@@ -23,7 +23,10 @@
 ```
 
 # Ajouter un hôte
-aa
+Dans zabbix : Surveillance > Hôtes
+nom
+groupe
+(interface) Ajouter > Agent > IP
 
 # Ajouter une Mibs
 bb
@@ -42,7 +45,7 @@ oid : .1.3.6.1.4.1.367.3.2.1.2.24.1.1.5.2
 
 
 # Graphique custom
-
+emplacement
 ```bash
 /usr/share/zabbix/modules 
 ```
