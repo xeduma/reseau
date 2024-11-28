@@ -1,15 +1,15 @@
 # sommaire
 [Configuration](#configuration)
 
-[Ajouter un hote](#Ajouter un hôte)
+[Ajouter un hote](#Ajouter-un-hôte)
 
-[Ajouter une Mibs](#Ajouter une Mibs)
+[Ajouter une Mibs](#Ajouter-une-Mibs)
 
-[Ajouter une Template](#Ajouter une Template)
+[Ajouter une Template](#Ajouter-une-Template)
 
 [imprimante](#imprimantes)
 
-[Graphique custom](#Graphique custom)
+[Graphique custom](#Graphique-custom)
 
 [monitoring une base SQL](#ODBC---sql)
 
