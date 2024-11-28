@@ -26,7 +26,7 @@ nom
 
 groupe d'hôte
 
-```(interface) Ajouter > Agent``` > IP
+```(interface) Ajouter > Agent > IP```
 
 Ajouter
 
@@ -37,7 +37,7 @@ modèle
 
 groupe d'hôte
 
-```(interface) Ajouter``` > SNMP
+```(interface) Ajouter > SNMP```
 
 IP
 
@@ -51,9 +51,7 @@ Ajouter
 # Ajouter une Template
 télécharger une template depuis https://www.zabbix.com/integrations
 
-Dans zabbix : Collecte de données > Modèles
-
-importé
+Dans zabbix : ```Collecte de données > Modèles > importé```
 
 choisir l'ensemble des règles, pour ajouter l'intégratlité de la template
 
@@ -68,8 +66,8 @@ emplacement de la mib
 
 # imprimantes
 import template richo
-collecte de donnée > modèle > snmp ricoh > graphique > créer
-elements > ajouté 
+```collecte de donnée > modèle > snmp ricoh > graphique > créer```
+```elements > ajouté ```
 nom
 cle : A_TonerLevel[Cyan Toner]
 numérique flottant
@@ -93,8 +91,8 @@ https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-micro
 https://medium.com/@amit61508/microsoft-sql-ms-sql-database-monitoring-with-zabbix-dffd1f5b0f0a
 
 ### Créer le user sur le serveur SQL
-sql instance   microsoft : Sécurité > connexions > Nouvelle connexion ....
-mappage d'utilisateur > accès MSDB >user   dbo_datareader
+sql instance   microsoft : ```Sécurité > connexions > Nouvelle connexion ```....
+```mappage d'utilisateur > accès MSDB >user ```  dbo_datareader
 
 ### Donner accès au user    commmande dans le SQL machine
 ```
@@ -103,7 +101,7 @@ go
 grant view server state to user
 ```
 vérifier le port      > gestionnaire de config SQL Server
-config réseau > protocols pour <INSTANCE>   propriété  > port ouvert 
+```config réseau > protocols pour <INSTANCE>   propriété  > port ouvert ```
 
 ### Installer le pilote ODBC windows 
 https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver16
@@ -156,8 +154,8 @@ ctr+ + w : rechercher  « ODBCpollers »
 ```Systemctl restart zabbix_server```
 
 ### Ajouter le host dans zabbix : 
-ajoute modèle host > MSSQL by ODBC
-dans macro > Ajouté : 
+```ajoute modèle host > MSSQL by ODBC```
+dans ```macro > Ajouté : ```
 Macro | Valeur
  ---: | :---
 {$MSSQL.DSN} | coucou
