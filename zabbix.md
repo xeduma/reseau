@@ -1,2 +1,82 @@
 # configuration
 ```bash/etc/zabbix/zabbix_server.conf```
+
+
+# ODBC - SQL
+Zabbix va contacter le SQL avec le pilote ODBC
+
+https://www.zabbix.com/integrations/mssql#mssql_odbc
+https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver16
+https://medium.com/@amit61508/microsoft-sql-ms-sql-database-monitoring-with-zabbix-dffd1f5b0f0a
+
+### Créer le user sur le serveur SQL
+sql instance   microsoft : Sécurité > connexions > Nouvelle connexion ....
+mappage d'utilisateur > accès MSDB >user   dbo_datareader
+
+### Donner accès au user    commmande dans le SQL machine
+```
+use master
+go
+grant view server state to user
+```
+vérifier le port      > gestionnaire de config SQL Server
+config réseau > protocols pour <INSTANCE>   propriété  > port ouvert 
+
+### Installer le pilote ODBC windows 
+https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver16
+
+
+## Config odbc
+
+```odbcinst -j```
+
+```nano /etc/odbc.ini```
+
+```
+[coucou]
+Description = MSSQL test database
+Driver      = ODBC Driver 18 for SQL Server
+Server      = coucou.local
+User        = zabbix_monitor
+#Password    =
+Port        = 1433
+#Database    =
+TrustServerCertificate = yes
+#ErrorMessagesPath=/tmp/ODBC_zabbix/
+LogPath=/tmp/ODBC_zabbix
+```
+
+```nano /etc/odbcinst.ini```
+
+```
+nano /etc/odbcinst.ini
+[ODBC Driver 18 for SQL Server]
+Description = Microsoft ODBC Driver 18 for SQL Server
+Driver      = /opt/microsoft/msodbcsql18/lib64/libmsodbcsql-18.3.so.3.1
+UsageCount  = 1
+TrustServerCertificate = False
+```
+Vérifier que le libmsodbcsql-18.3 est la bonne version (18.x ?)
+TrustCertificat a false car pas de SSL
+
+
+### Tester la connexion : 
+```isql -v coucou zabbix_monitor "mdp"```
+
+
+### Activer odbc sur zabbix :
+```nano /etc/zabbix/zabbi_server.config```
+
+ctr+ + w : rechercher  « ODBCpollers »
+```StartODBCPollers=5```                #décommenter cette ligne
+
+```Systemctl restart zabbix_server```
+
+### Ajouter le host dans zabbix : 
+ajoute modèle host > MSSQL by ODBC
+dans macro > Ajouté : 
+Macro | Valeur
+ ---: | :---
+{$MSSQL.DSN} | coucou
+{$MSSQL.PASSWORD} | MDP_secret
+{$MSSQL.USER} | zabbix_monitor
