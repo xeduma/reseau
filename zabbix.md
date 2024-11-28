@@ -19,14 +19,14 @@
 ```
 
 # Ajouter un hôte
-Dans zabbix : Surveillance > Hôtes > Créer un hôte
+Dans zabbix : ```Surveillance > Hôtes > Créer un hôte```
 
 ### ping 
 nom
 
 groupe d'hôte
 
-(interface) Ajouter > Agent > IP
+```(interface) Ajouter > Agent``` > IP
 
 Ajouter
 
@@ -37,7 +37,7 @@ modèle
 
 groupe d'hôte
 
-(interface) Ajouter > SNMP
+```(interface) Ajouter``` > SNMP
 
 IP
 
