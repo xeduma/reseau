@@ -5,7 +5,7 @@
 
 [Ajouter une Template](#Ajouter-une-Template)
 
-[imprimante](#imprimantes)
+ - [imprimante](#imprimantes)
 
 [Graphique custom](#Graphique-custom)
 
