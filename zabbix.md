@@ -43,7 +43,7 @@ groupe d'hôte
 
 IP
 
-Version SNMP
+```SNMPv2```   ou  ```SNMPv3```
 
 communauté SNMP {$SNMP_COMMUNITY} = public
 
