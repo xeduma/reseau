@@ -1,15 +1,42 @@
 # sommaire
 [Configuration](#configuration)
 
-[ODBC](#ODBC---sql)
+[Ajouter un hote](#Ajouter un hôte)
+
+[Ajouter une Mibs](#Ajouter une Mibs)
+
+[Ajouter une Template](#Ajouter une Template)
 
 [imprimante](#imprimantes)
+
+[Graphique custom](#Graphique custom)
+
+[monitoring une base SQL](#ODBC---sql)
+
+
 
 
 
 # configuration
 ```bash/etc/zabbix/zabbix_server.conf```
 
+# Ajouter un hôte
+aa
+
+# Ajouter une Mibs
+bb
+
+# Ajouter une Template
+cc
+
+# imprimantes
+import template richo
+collecte de donnée > modèle > snmp ricoh > graphique > créer
+elements > ajouté 
+nom
+cle : A_TonerLevel[Cyan Toner]
+numérique flottant
+oid : .1.3.6.1.4.1.367.3.2.1.2.24.1.1.5.2
 
 # ODBC - SQL
 Zabbix va contacter le SQL avec le pilote ODBC
@@ -90,13 +117,4 @@ Macro | Valeur
 {$MSSQL.PASSWORD} | MDP_secret
 {$MSSQL.USER} | zabbix_monitor
 
-
-# imprimantes
-import template richo
-collecte de donnée > modèle > snmp ricoh > graphique > créer
-elements > ajouté 
-nom
-cle : A_TonerLevel[Cyan Toner]
-numérique flottant
-oid : .1.3.6.1.4.1.367.3.2.1.2.24.1.1.5.2
 
